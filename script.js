@@ -1,5 +1,5 @@
 const form = document.querySelector("form");
-const studentList = document.querySelector("ul");
+const table = document.querySelector("table");
 
 form.addEventListener("submit", function(event) {
   event.preventDefault();
@@ -15,12 +15,11 @@ form.addEventListener("submit", function(event) {
     return;
   }
 
-  const student = document.createElement("li");
+  const row = table.insertRow();
 
-  student.textContent =
-    name + " - " + department + " - " + rollNumber;
-
-  studentList.appendChild(student);
+  row.insertCell(0).textContent = name;
+  row.insertCell(1).textContent = department;
+  row.insertCell(2).textContent = rollNumber;
 
   form.reset();
 });
