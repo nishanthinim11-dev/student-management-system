@@ -22,4 +22,4 @@ form.addEventListener("submit", function(event) {
   row.insertCell(2).textContent = rollNumber;
 
   form.reset();
-});
+})
