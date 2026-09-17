@@ -49,4 +49,3 @@ row.cells[0].textContent = newName;
 row.cells[1].textContent = newDepartment;
 row.cells[2].textContent = newRollNumber;
 }
-}
