@@ -59,3 +59,25 @@ row.cells[1].textContent = department;
 row.cells[2].textContent = rollNumber;
 }
 }
+const searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("input", function() {
+  const searchText = searchInput.value.toLowerCase();
+  const rows = table.getElementsByTagName("tr");
+
+  for (let i = 1; i < rows.length; i++) {
+    const name = rows[i].cells[0].textContent.toLowerCase();
+    const department = rows[i].cells[1].textContent.toLowerCase();
+    const rollNumber = rows[i].cells[2].textContent.toLowerCase();
+
+    if (
+      name.includes(searchText) ||
+      department.includes(searchText) ||
+      rollNumber.includes(searchText)
+    ) {
+      rows[i].style.display = "";
+    } else {
+      rows[i].style.display = "none";
+    }
+  }
+});
