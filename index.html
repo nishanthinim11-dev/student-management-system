@@ -1,32 +1,51 @@
-<!DOCTYPE html><html>
+<!DOCTYPE html>
+<html>
 <head>
   <title>Student Management System</title>
   <link rel="stylesheet" href="style.css">
-</head><body>  <h1>Student Management System</h1>  <h2>Add Student</h2>  <form>
+</head>
+
+<body>
+
+  <h1>Student Management System</h1>
+
+  <h2>Add Student</h2>
+
+  <form>
     <label>Student Name:</label>
-    <input type="text" placeholder="Enter name"><br><br><label>Department:</label>
-<input type="text" placeholder="Enter department"><br><br>
+    <input type="text" placeholder="Enter name"><br><br>
 
-<label>Roll Number:</label>
-<input type="text" placeholder="Enter roll number"><br><br>
+    <label>Department:</label>
+    <input type="text" placeholder="Enter department"><br><br>
 
-<button type="submit">Add Student</button>
+    <label>Roll Number:</label>
+    <input type="text" placeholder="Enter roll number"><br><br>
 
-  </form>  <h2>Student List</h2>  <table border="1">
+    <button type="submit">Add Student</button>
+  </form>
+
+  <h2>Student List</h2>
+
+  <table border="1">
     <tr>
       <th>Name</th>
       <th>Department</th>
       <th>Roll Number</th>
       <th>Actions</th>
-    </tr><tr>
-  <td>Nisha</td>
-  <td>Computer Science</td>
-  <td>101</td>
-  <td>
-    <button onclick="editStudent(this)">Edit</button>
-    <button onclick="deleteStudent(this)">Delete</button>
-  </td>
-</tr>
+    </tr>
 
-  </table>  <script src="script.js"></script></body>
+    <tr>
+      <td>Nisha</td>
+      <td>Computer Science</td>
+      <td>101</td>
+      <td>
+        <button onclick="editStudent(this)">Edit</button>
+        <button onclick="deleteStudent(this)">Delete</button>
+      </td>
+    </tr>
+  </table>
+
+  <script src="script.js"></script>
+
+</body>
 </html>
